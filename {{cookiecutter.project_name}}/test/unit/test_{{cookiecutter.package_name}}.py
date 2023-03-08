@@ -2,6 +2,8 @@
 
 import pytest
 
+import {{cookiecutter.package_name}}
+
 def test_vacuous():
     """A test that passes vacuously"""
     pass
