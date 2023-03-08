@@ -36,6 +36,7 @@ test: bootstrap ## Run unittests on the source directory
 	@( \
 		source .venv/bin/activate; \
 		pytest --cov={{cookiecutter.package_name}}; \
+		coverage report -m; \
 	)
 
 .PHONY: lint
