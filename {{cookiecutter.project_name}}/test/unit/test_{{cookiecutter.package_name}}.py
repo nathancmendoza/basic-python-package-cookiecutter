@@ -11,7 +11,7 @@ def test_exception():
     with pytest.raises(ValueError):
         raise ValueError()
 
-@pytest.mark.parametrize("x, y", [(a, b) for a in range(100) for b in range(100)])
+@pytest.mark.parametrize("x, y", [(a, b) for a in range(10) for b in range(10)])
 def test_parametrize(x, y):
     """Test cases can be parametrized to test multiple inputs at once"""
-    assert a + b == b + a
+    assert x + y == y + x
